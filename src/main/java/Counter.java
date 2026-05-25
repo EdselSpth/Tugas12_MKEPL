@@ -34,10 +34,6 @@ public class Counter {
 		int i = 3;
 		multiplyBy(i);
 	}
-
-	public void powerBy(int i){
-		count = count ^ i;
-	}
 	
 	public boolean isCountEven(){
 		return count%2 == 0;
@@ -46,5 +42,11 @@ public class Counter {
 	public int getCount() {
 		return count;
 	}
+
+
+	public boolean checkVersion(String input) {
+        String currentVersion = new String("v1.0");
+        return input == currentVersion; 
+    }
 	
 }

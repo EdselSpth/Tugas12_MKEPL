@@ -14,17 +14,13 @@ public class Driver {
 		
 		System.out.println("Current count:" + counter.getCount());
 		
-		counter.increaseBy(5);
-		counter.increaseBy(5);
-		counter.increaseBy(5);
-		counter.increaseBy(5);
-		counter.increaseBy(5);
-		counter.increaseBy(5);
-		counter.increaseBy(5);
+		Counter badCounter = null;
+        if (counter.getCount() > 0) {
+            System.out.println("Bad Counter: " + badCounter.getCount());
+        }
 
-		System.out.println("Current count:" + counter.getCount());
-
-		
+		int[] dummyArray = {1, 2, 3};
+        System.out.println("Akses indeks ilegal: " + dummyArray[5]);
 	}
 
 }
